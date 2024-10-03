@@ -13,11 +13,13 @@ curl -L https://go.dev/dl/go1.22.7.linux-amd64.tar.gz | sudo tar -xzf - -C /usr/
 echo 'export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin' >> $HOME/.profile
 source .profile
 ```
-# Clone project repository
+**Clone project repository**
+```
 cd && rm -rf lava
 git clone https://github.com/lavanet/lava
 cd lava
 git checkout v3.1.0
+```
 
 # Build binary
 export LAVA_BINARY=lavad
