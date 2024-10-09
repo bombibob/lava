@@ -46,8 +46,10 @@ lavad config keyring-backend test
 lavad config node tcp://localhost:19957
 ```
 
-# Initialize the node
+**Initialize the node**
+```
 lavad init "Your Node Name" --chain-id lava-testnet-2
+```
 
 # Download genesis and addrbook files
 curl -L https://snapshots-testnet.nodejumper.io/lava/genesis.json > $HOME/.lava/config/genesis.json
