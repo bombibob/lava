@@ -91,7 +91,8 @@ curl "https://snapshots-testnet.nodejumper.io/lava/lava-testnet_latest.tar.lz4" 
 go install cosmossdk.io/tools/cosmovisor/cmd/cosmovisor@v1.6.0
 ```
 
-# Create a service
+**Create a service**
+```
 sudo tee /etc/systemd/system/lava.service > /dev/null << EOF
 [Unit]
 Description=Lava node service
@@ -112,6 +113,7 @@ WantedBy=multi-user.target
 EOF
 sudo systemctl daemon-reload
 sudo systemctl enable lava.service
+```
 
 # Start the service and check the logs
 sudo systemctl start lava.service
