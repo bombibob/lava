@@ -115,10 +115,12 @@ sudo systemctl daemon-reload
 sudo systemctl enable lava.service
 ```
 
-# Start the service and check the logs
+**Start the service and check the logs**
+```
 sudo systemctl start lava.service
 sudo journalctl -u lava.service -f --no-hostname -o cat
 Create Validator
+```
 
 # create wallet
 lavad keys add wallet
