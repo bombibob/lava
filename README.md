@@ -122,8 +122,10 @@ sudo journalctl -u lava.service -f --no-hostname -o cat
 Create Validator
 ```
 
-# create wallet
+**create wallet**
+```
 lavad keys add wallet
+```
 
 ## console output:
 #- name: wallet
