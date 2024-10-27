@@ -153,8 +153,10 @@ lavad status 2>&1 | jq .SyncInfo.catching_up
 curl -X POST -d '{"address": "YOUR_WALLET_ADDRESS", "coins": ["10000000ulava"]}' https://faucet-api.lavanet.xyz/faucet/
 ```
 
-# verify the balance
+**verify the balance**
+```
 lavad q bank balances $(lavad keys show wallet -a)
+```
 
 ## console output:
 #  balances:
