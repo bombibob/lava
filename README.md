@@ -158,10 +158,12 @@ curl -X POST -d '{"address": "YOUR_WALLET_ADDRESS", "coins": ["10000000ulava"]}'
 lavad q bank balances $(lavad keys show wallet -a)
 ```
 
-## console output:
-#  balances:
-#  - amount: "10000000"
-#    denom: ulava
+**console output**
+```
+balances:
+ amount: "10000000"
+denom: ulava
+```
 
 # create validator
 lavad tx staking create-validator \
