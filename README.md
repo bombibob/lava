@@ -165,7 +165,8 @@ balances:
 denom: ulava
 ```
 
-# create validator
+**create validator**
+```
 lavad tx staking create-validator \
 --amount=9000000ulava \
 --pubkey=$(lavad tendermint show-validator) \
@@ -178,6 +179,7 @@ lavad tx staking create-validator \
 --fees=10000ulava \
 --from=wallet \
 -y
+```
 
 # make sure you see the validator details
 lavad q staking validator $(lavad keys show wallet --bech val -a)
