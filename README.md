@@ -181,9 +181,11 @@ lavad tx staking create-validator \
 -y
 ```
 
-# make sure you see the validator details
+**make sure you see the validator details**
+```
 lavad q staking validator $(lavad keys show wallet --bech val -a)
 Secure Server Setup (Optional)
+```
 
 # generate ssh keys, if you don't have them already, DO IT ON YOUR LOCAL MACHINE
 ssh-keygen -t rsa
