@@ -187,8 +187,10 @@ lavad q staking validator $(lavad keys show wallet --bech val -a)
 Secure Server Setup (Optional)
 ```
 
-# generate ssh keys, if you don't have them already, DO IT ON YOUR LOCAL MACHINE
+**generate ssh keys, if you don't have them already, DO IT ON YOUR LOCAL MACHINE**
+```
 ssh-keygen -t rsa
+```
 
 # save the output, we'll use it later on instead of YOUR_PUBLIC_SSH_KEY
 cat ~/.ssh/id_rsa.pub
